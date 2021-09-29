@@ -1,0 +1,168 @@
+:root {
+    --dark-color: #212121;
+  }
+  
+  body {
+    font-family: system-ui;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5em;
+    width: 100%;
+  }
+  
+  h4 {
+    font-weight: normal;
+    margin-bottom: 5px;
+  }
+  h1 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 2em;
+  }
+  
+  #image {
+    border-radius: 150%;
+    height: 150px;
+    width:200px;
+  }
+
+  img{
+    width:350px;
+    height:250px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  main * {
+    margin-bottom: 20px;
+  }
+  
+  label{
+    text-align: left;
+    margin-left:30%;
+    font-size:16px;
+  }
+  input {
+    margin-left:30%;
+    text-align: center;
+    font-size: large;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+    width:500px;
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#000;
+    text-align: left;
+    font-size: 15px;
+    opacity: 0.5; /* Firefox */
+  }
+  /* for styling the autocomplete style */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--dark-color) !important;
+  }
+  
+  button {
+    background: #8bc34a;
+    color: #fff;
+    border: none;
+    font-size: 0.8em;
+    padding: 15px 25px;
+    margin: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:30%;
+    margin-right:30%;
+
+  }
+  a {
+    color: #000;
+  }
+  
+  /* dark mode css */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: var(--dark-color);
+      color: #fff;
+    }
+    input,
+    input:active {
+      background: var(--dark-color);
+      border-color: #fff;
+      color: #fff;
+    }
+  
+    /* for styling the autocomplete style */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: #fff !important;
+    }
+  }
+
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 100px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  align-self: center;
+  width:50%;
+  right: 35px;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.img{
+  width:20%;
+}

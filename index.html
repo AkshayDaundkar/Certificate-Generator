@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate for PadhegaIndia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="favicon" href="favicon.ico">
+
+
+
+    <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              margin-top:-35px;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover {
+              background-color: #111;
+            }
+            .footer {
+                position: relative;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 50px;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+    </style>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+   <!-- Navbar -->
+    <!-- <iframe id="mypdf" height="500px;" width="500px;" frameborder="0"></iframe> -->
+    <header>
+        <img id="image" src="./logo.png">
+        <h4>Get your certificate of subscription to any of the templates provided Below</h4>
+        <!-- <h2> <a href="#" target="_blank"
+                rel="noopener noreferrer">Your Dream Company </a></h2> -->
+    </header>
+
+           <!-- New section -->
+           <h3>Select Any One Template</h3>
+           <div class="row">
+                <div class="column">
+                    <label>1</label>
+                  <img required id="./xyz.pdf" src="./4.png" alt="Nature" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <label>2</label>
+                  <img required id="./pqrr.pdf" src="./5.png" alt="Snow" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <label>3</label>
+                  <img required id="./xyz.pdf" src="./6.png" alt="Mountains" onclick="myFunction(this);">
+                </div>
+
+              </div>
+              
+              <!-- The expanding image container -->
+              <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              
+                <!-- Expanded image -->
+                <h2>You Have choosed This Certificate</h2>
+                <img id="expandedImg" style="width:50%; height:60%" >
+              
+                <!-- Image text -->
+                <div id="imgtext"></div>
+              </div>
+        <!-- New section end -->
+
+              <!-- <button><a href="./forms.html">Go to forms</a></button> -->
+    <main>
+        <h4 style="padding-bottom:40px">Get your certificate of Choosen Certificate! Fill the details to avail the certificate!</h4>
+        <label for="name">Type Your Name</label>
+            <input required type="text" name="Name" autocomplete="name" placeholder="Your Name" id="name" minlength="3"
+                maxlength="16">
+        <label for="name">Type Your Description</label>
+            <input required type="text" name="Desc" autocomplete="desc" placeholder="Description" id="desc" minlength="3"
+            maxlength="160">
+        <label for="name">Type Your Author</label>
+            <input required type="text" name="Author" autocomplete="Author" placeholder="Author" id="auth" minlength="3"
+            maxlength="16">
+        <label for="name">Type Your Certificate Of</label>
+            <input required type="text" name="Certificate of ?" autocomplete="Participation" placeholder="Certificate of Participation" id="cert" minlength="3"
+            maxlength="50">
+        <label for="name">Type Your Designation</label>
+            <input required type="text" name="Designation" autocomplete="CEO" placeholder="CEO, Head Person" id="designation" minlength="3"
+            maxlength="50">
+
+            
+        <Button id="submitBtn">Get Certificate</Button>
+        <!-- Footer -->
+        <div class="footer">
+                <p style="margin-top:-0.5px;">®️ by puneri technologies <a href="https://puneritechnologies.com/"></a></p>
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
